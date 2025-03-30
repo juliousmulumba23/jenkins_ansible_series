@@ -1,0 +1,9 @@
+---
+- hosts: "{{ hosts }}"
+
+  tasks:
+    - name: test reboot server
+      reboot:
+        msg: "Reboot machine in 5 seconds"
+        reboot_timeout: 3600  
+        test_command: "whoami"
