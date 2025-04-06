@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Execute Playbook'){
             steps{
-                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, extras: '-e hosts=all', installation: 'Ansible', inventory: 'hosts', playbook: 'test_reboot.yml', vaultTmpPath: ''
+                ansiblePlaybook credentialsId: 'private-key', disableHostKeyChecking: true, extras: '-e hosts=all', installation: 'Ansible', inventory: 'hosts', playbook: 'patch_update.yml', vaultTmpPath: ''
             }
         }
     }
