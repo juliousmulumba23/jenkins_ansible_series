@@ -1,2 +1,5 @@
 [agent_server]
 prdansiblerh7
+k8s-controlplane
+k8s-workernode1
+k8s-workernode2
